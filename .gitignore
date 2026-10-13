@@ -1,0 +1,47 @@
+# ===== 环境变量（含密钥，禁止提交）=====
+.env
+.env.local
+.env.*.local
+
+# ===== IDE =====
+.idea/
+.vscode/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 日志 =====
+logs/
+*.log
+
+# ===== Node / 前端 =====
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ===== 本地大模型权重（约 1.24GB，请自行下载，不要提交）=====
+# GitHub 单文件上限 100MB，提交会导致 push 被拒绝
+docker/embedding/bge-large-zh-v1.5/
+docker/embedding/*/pytorch_model.bin
+docker/embedding/*/*.safetensors
+docker/embedding/*/model.safetensors
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 数据卷 / 运行产物 =====
+*.sqlite
+*.db
